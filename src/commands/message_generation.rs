@@ -24,48 +24,18 @@ pub fn get_dia_string() -> String {
         if i == 9 {
             s.push_str(QMARK_LIST[rand::thread_rng().gen_range(0, 4)]);
         }
-        i+= 1;
+        i += 1;
     }
     return s;
 }
-const D_LIST: [&str; 4] = [
-    "d",
-    "D",
-    "ɖ",
-    "ɗ",
-];
+const D_LIST: [&str; 4] = ["d", "D", "ɖ", "ɗ"];
 
-const I_LIST: [&str; 4] = [
-    "i",
-    "I",
-    "¡",
-    "ϊ",
-];
+const I_LIST: [&str; 4] = ["i", "I", "¡", "ϊ"];
 
-const A_LIST: [&str; 4] = [
-    "a",
-    "A",
-    "∆",
-    "@",
-];
+const A_LIST: [&str; 4] = ["a", "A", "∆", "@"];
 
-const S_LIST: [&str; 4] = [
-    "s",
-    "S",
-    "$",
-    "$",
-];
+const S_LIST: [&str; 4] = ["s", "S", "$", "$"];
 
-const K_LIST: [&str; 4] = [
-    "k",
-    "K",
-    "ꝅ",
-    "ꝅ",
-];
+const K_LIST: [&str; 4] = ["k", "K", "ꝅ", "ꝅ"];
 
-const QMARK_LIST: [&str; 4] = [
-    "⁉",
-    "⁇",
-    "‽",
-    "‽",
-];
+const QMARK_LIST: [&str; 4] = ["⁉", "⁇", "‽", "‽"];

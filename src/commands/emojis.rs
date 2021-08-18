@@ -1,7 +1,7 @@
+use rand::Rng;
 use serenity::framework::standard::{macros::command, CommandResult};
 use serenity::model::prelude::*;
 use serenity::prelude::*;
-use rand::Rng;
 
 #[command]
 fn uwu(ctx: &mut Context, msg: &Message) -> CommandResult {
@@ -17,7 +17,10 @@ fn owo(ctx: &mut Context, msg: &Message) -> CommandResult {
 
 #[command]
 fn smile(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", SMILE[rand::thread_rng().gen_range(0, SMILE.len())]);
+    let s = format!(
+        "``{}``",
+        SMILE[rand::thread_rng().gen_range(0, SMILE.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
@@ -38,28 +41,40 @@ fn flex(ctx: &mut Context, msg: &Message) -> CommandResult {
 
 #[command]
 fn animal(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", ANIMAL[rand::thread_rng().gen_range(0, ANIMAL.len())]);
+    let s = format!(
+        "``{}``",
+        ANIMAL[rand::thread_rng().gen_range(0, ANIMAL.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
 
 #[command]
 fn surprise(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", SURPRISE[rand::thread_rng().gen_range(0, SURPRISE.len())]);
+    let s = format!(
+        "``{}``",
+        SURPRISE[rand::thread_rng().gen_range(0, SURPRISE.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
 
 #[command]
 fn dance(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", DANCE[rand::thread_rng().gen_range(0, DANCE.len())]);
+    let s = format!(
+        "``{}``",
+        DANCE[rand::thread_rng().gen_range(0, DANCE.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
 
 #[command]
 fn shrug(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", SHRUG[rand::thread_rng().gen_range(0, SHRUG.len())]);
+    let s = format!(
+        "``{}``",
+        SHRUG[rand::thread_rng().gen_range(0, SHRUG.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
@@ -73,7 +88,10 @@ fn flip(ctx: &mut Context, msg: &Message) -> CommandResult {
 
 #[command]
 fn unflip(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", UNFLIP[rand::thread_rng().gen_range(0, UNFLIP.len())]);
+    let s = format!(
+        "``{}``",
+        UNFLIP[rand::thread_rng().gen_range(0, UNFLIP.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
@@ -108,7 +126,10 @@ fn bear(ctx: &mut Context, msg: &Message) -> CommandResult {
 
 #[command]
 fn fight(ctx: &mut Context, msg: &Message) -> CommandResult {
-    let s = format!("``{}``", FIGHT[rand::thread_rng().gen_range(0, FIGHT.len())]);
+    let s = format!(
+        "``{}``",
+        FIGHT[rand::thread_rng().gen_range(0, FIGHT.len())]
+    );
     let _ = msg.channel_id.say(&ctx.http, s);
     Ok(())
 }
@@ -159,7 +180,7 @@ const HUG: [&str; 32] = [
     "(つ≧▽≦)つ",
     "(つ✧ω✧)つ",
     "(っ.❛ ᴗ ❛.)っ",
-   "～(つˆДˆ)つ｡",
+    "～(つˆДˆ)つ｡",
     "☆ლ(´ ❥ `ლ)",
     "⊂(•‿•⊂ )*.",
     "✧⊂(´･◡･⊂ )",
@@ -518,7 +539,4 @@ const BEAR: [&str; 12] = [
     "ʕノ•ᴥ•ʔノ ︵ ┻━┻",
 ];
 
-const FIGHT: [&str; 2] = [
-    "(ง'̀-'́)ง",
-    "(ง ͠° ͟ل͜ ͡°)ง",
-];
+const FIGHT: [&str; 2] = ["(ง'̀-'́)ง", "(ง ͠° ͟ل͜ ͡°)ง"];

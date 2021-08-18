@@ -1,6 +1,6 @@
 # https://www.artificialworlds.net/blog/2020/04/22/creating-a-tiny-docker-image-of-a-rust-project/
 # 1: Build the exe
-FROM rust:1.49.0 as build
+FROM rust:latest as build
 WORKDIR /usr/src
 
 # 1a: Prepare for static linking
