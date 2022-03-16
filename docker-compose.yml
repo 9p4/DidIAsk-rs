@@ -1,7 +1,7 @@
 version: '3'
 services:
   bot:
-    image: sambhavsaggi/didiask-rs
+    image: ghcr.io/9p4/didiask-rs
     environment:
       PREFIX: '!'
       DISCORD_TOKEN: 'put-your-token-here'
